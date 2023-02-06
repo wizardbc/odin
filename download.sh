@@ -18,3 +18,16 @@ tar -xvzf LSUN_resize.tar.gz
 tar -xvzf iSUN.tar.gz
 
 cd ..
+
+mkdir -p ./models
+cd models
+
+echo "Download DenseNet models..."
+wget https://www.dropbox.com/s/wr4kjintq1tmorr/densenet10.pth.tar.gz
+wget https://www.dropbox.com/s/vxuv11jjg8bw2v9/densenet100.pth.tar.gz
+
+echo "Unzip..."
+tar -xvzf densenet10.pth.tar.gz
+tar -xvzf densenet100.pth.tar.gz
+
+cd ..

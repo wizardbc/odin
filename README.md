@@ -14,7 +14,13 @@ Tested on:
 * `torchmetrics`==0.11.1
 * `tqdm`, `matplotlib`, ...
 
-### Downloading  Out-of-Distribtion Datasets
+### Downloading
+In the **root** of the repository, run
+```bash
+sh download.sh
+```
+
+#### Out-of-Distribtion Datasets
 [facebookresearch/odin](https://github.com/facebookresearch/odin) provide download links of five out-of-distributin datasets:
 
 * **[Tiny-ImageNet (crop)](https://www.dropbox.com/s/avgm2u562itwpkl/Imagenet.tar.gz)**
@@ -23,11 +29,18 @@ Tested on:
 * **[LSUN (resize)](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz)**
 * **[iSUN](https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz)**
 
-In the **root** of the repository, run
+#### Neural Network Models
+[facebookresearch/odin](https://github.com/facebookresearch/odin) provide download links of four pre-trained models.
 
-```bash
-sh download_data.sh
-```
+We can use any other pytorch model.
+
+* [DenseNet-BC trained on CIFAR-10](https://www.dropbox.com/s/wr4kjintq1tmorr/densenet10.pth.tar.gz)
+* [DenseNet-BC trained on CIFAR-100](https://www.dropbox.com/s/vxuv11jjg8bw2v9/densenet100.pth.tar.gz)
+* ~~[Wide ResNet trained on CIFAR-10](https://www.dropbox.com/s/uiye5nw0uj6ie53/wideresnet10.pth.tar.gz)~~
+* ~~[Wide ResNet trained on CIFAR-100](https://www.dropbox.com/s/elfw7e3uofpydg5/wideresnet100.pth.tar.gz)~~
+
+Wide ResNet models need 3 GPUs and older version of pytorch (NOT tested).
+DenseNet-BC models prints some warning, but they work.
 
 ### Running
 See `ODIN.ipynb`.
