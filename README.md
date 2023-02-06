@@ -39,7 +39,7 @@ We can use any pytorch model.
 * ~~[Wide ResNet trained on CIFAR-10](https://www.dropbox.com/s/uiye5nw0uj6ie53/wideresnet10.pth.tar.gz)~~
 * ~~[Wide ResNet trained on CIFAR-100](https://www.dropbox.com/s/elfw7e3uofpydg5/wideresnet100.pth.tar.gz)~~
 
-DenseNet-BC models prints some warning, but they work.
+DenseNet-BC models prints some warnings, but they work.
 Wide ResNet models need 3 GPUs and older version of pytorch (NOT tested).
 
 ### Running
