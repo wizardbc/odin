@@ -30,17 +30,17 @@ sh download.sh
 * **[iSUN](https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz)**
 
 #### Neural Network Models
-[facebookresearch/odin](https://github.com/facebookresearch/odin) provide download links of four pre-trained models.
+We can use any pytorch model.
 
-We can use any other pytorch model.
+[facebookresearch/odin](https://github.com/facebookresearch/odin) provide download links of four pre-trained models.
 
 * [DenseNet-BC trained on CIFAR-10](https://www.dropbox.com/s/wr4kjintq1tmorr/densenet10.pth.tar.gz)
 * [DenseNet-BC trained on CIFAR-100](https://www.dropbox.com/s/vxuv11jjg8bw2v9/densenet100.pth.tar.gz)
 * ~~[Wide ResNet trained on CIFAR-10](https://www.dropbox.com/s/uiye5nw0uj6ie53/wideresnet10.pth.tar.gz)~~
 * ~~[Wide ResNet trained on CIFAR-100](https://www.dropbox.com/s/elfw7e3uofpydg5/wideresnet100.pth.tar.gz)~~
 
-Wide ResNet models need 3 GPUs and older version of pytorch (NOT tested).
 DenseNet-BC models prints some warning, but they work.
+Wide ResNet models need 3 GPUs and older version of pytorch (NOT tested).
 
 ### Running
 See `ODIN.ipynb`.
